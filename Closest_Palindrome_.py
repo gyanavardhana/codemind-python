@@ -1,4 +1,3 @@
-
 def pal(n):
     t=str(n)
     r=int(t[::-1])
