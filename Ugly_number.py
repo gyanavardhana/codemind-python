@@ -16,4 +16,3 @@ if ugly(n)==1:
     print("Ugly Number")
 else:
     print("Not Ugly Number")
-
