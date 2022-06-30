@@ -1,4 +1,4 @@
 t=int(input())
-while t!=0:
+for i in range(t):
     a,b=map(int,input().split())
     print(a+b)
