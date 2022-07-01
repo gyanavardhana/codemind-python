@@ -1,3 +1,4 @@
+
 n=int(input())
 l=list(map(int,input().split()))[:n]
 c=0
@@ -9,5 +10,3 @@ for i in l:
         i=i//10
 print(r)
     
-
-        
