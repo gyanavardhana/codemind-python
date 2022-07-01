@@ -7,5 +7,5 @@ for i in range(j):
     m.append(l[i])
 for i in range(j,len(l)):
     k.append(l[i])
-print(sum(m))
-print(sum(k))
+print(abs(sum(m)))
+print(abs(sum(k)))
