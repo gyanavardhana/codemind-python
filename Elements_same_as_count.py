@@ -1,23 +1,17 @@
-def f(n):
-    c=0
-    for i in l:
-        if n==i:
-            c=c+1
-    return c
 n=int(input())
-l=list(map(int,input().split()))
-def lis(lis):
+l=list(map(int,input().split()))[:n]
+def s(lis):
     s=[]
-    for i in lis:
+    for i in l:
         if i not in s:
             s.append(i)
     return s
-a=[]
-s=lis(l)
+s=s(l)
+s1=[]
 for i in s:
-    if f(i)==i:
-        a.append(i)
-if len(a)==0:
+    if i==l.count(i):
+        s1.append(i)
+if len(s1)==0:
     print(-1)
 else:
-    print(*a)
+    print(*s1)
