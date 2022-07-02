@@ -1,20 +1,23 @@
-
 s=input()
 a=[]
-for i in range(0,len(s)):
-    c=0
-    for j in range(0,len(s)):
-        #checking if two characters are equal
-        if(s[i]==s[j] and i!=j):
-            c=1
-            break
-    if(c==0):
-        a.append(s[i])
-a=sorted(a)
-l=[]
+b=[]
+c=0
+d=[]
+e=[]
+n=s.split()
+for i in s:
+    for j in i:
+        a.append(j)
 for i in a:
-    if ord(i)>90:
-        l.append(i)
-l=sorted(l)
-for i in l:
+    if i!=' ' or ord(i)>90:
+        b.append(i)
+b=list(set(b))
+for i in b:
+    if ord(i)>=65 and ord(i)<=90:
+        d.append(i)
+for i in b:
+    if i not in d:
+        e.append(i)
+e=sorted(e)
+for i in e:
     print(i,end='')
