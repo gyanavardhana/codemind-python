@@ -5,7 +5,6 @@ o=c
 for i in range(r):
     j=list(map(int,input().split()))
     mtrx.append(j)
-##to print sum of diagnols
 su=0
 ju=0
 for i in range(r):
