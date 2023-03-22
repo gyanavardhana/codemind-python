@@ -1,3 +1,4 @@
+## binary to decimal
 n=int(input())
 l=list(map(int,input().split()))[:n]
 s=0
