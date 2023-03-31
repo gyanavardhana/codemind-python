@@ -7,6 +7,7 @@ def pal(n):
         return False
 n=int(input())
 for i in range(1,n//2):
+    
     if pal(n-i) and pal(n+i):
         print(n-i,n+i)
         break
